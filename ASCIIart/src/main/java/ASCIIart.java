@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.util.Scanner;
 
-// Best to lower font size in CLI to see the outcome
+// Best to lower font size in CLI to see the outcomes
 
 public class ASCIIart {
     public static void main(String[] user) {
