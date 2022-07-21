@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class ASCIIart {
     public static void main(String[] user) {
 
+        String rootDirectory = "C:\\Users\\nokak\\Desktop\\CS\\Semester-III\\" +
+                "Universal programming techniques (UTP)\\ASCIIartTempFolder\\ASCIIart";
         Scanner input = new Scanner(System.in);
         BufferedImage img = null;
         File f;
@@ -16,12 +18,13 @@ public class ASCIIart {
 
         // read image
         try {
-            f = new File("C:\\Users\\nokak\\Desktop\\hehexd\\ben_dover1.png");
+            f = new File( rootDirectory +
+                    "\\src\\main\\resources\\pixelamogus.jpg");
             img = ImageIO.read(f);
             System.out.println("Successfully loaded image!");
 
         } catch(IOException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
         // get height and width
@@ -47,7 +50,7 @@ public class ASCIIart {
                 System.exit(0);
             }
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
     }
